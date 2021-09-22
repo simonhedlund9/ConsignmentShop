@@ -18,6 +18,7 @@ namespace ConsignmentShop
         public ConsignmentShop()
         {
             InitializeComponent();
+            SetupData();
         }
 
         private void SetupData()
@@ -27,6 +28,14 @@ namespace ConsignmentShop
 
             store.Vendors.Add(demoVendor1);
             store.Vendors.Add(demoVendor2);
+
+            Item item1 = new Item("CS GO", "FPS online game", 150, demoVendor1);
+            Item item2 = new Item("Minecraft", "Survival game for every age!", 270, demoVendor1);
+            Item item3 = new Item("World Of Warcraft", "MMO RPG with a massive following! Over 100 miljon players registered.", 350, demoVendor2);
+
+            store.Items.Add(item1);
+            store.Items.Add(item2);
+            store.Items.Add(item3);
 
         }
 

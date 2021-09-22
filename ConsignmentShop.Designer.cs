@@ -35,6 +35,7 @@
             this.shoppingCartListboxLabel = new System.Windows.Forms.Label();
             this.shoppingCartListbox = new System.Windows.Forms.ListBox();
             this.makePurchase = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
             // headerText
@@ -104,11 +105,18 @@
             this.makePurchase.Text = "Purchase";
             this.makePurchase.UseVisualStyleBackColor = true;
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(63, 376);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 7;
+            // 
             // ConsignmentShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 570);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.makePurchase);
             this.Controls.Add(this.shoppingCartListboxLabel);
             this.Controls.Add(this.shoppingCartListbox);
@@ -134,6 +142,7 @@
         private System.Windows.Forms.Label shoppingCartListboxLabel;
         private System.Windows.Forms.ListBox shoppingCartListbox;
         private System.Windows.Forms.Button makePurchase;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
 
