@@ -64,7 +64,13 @@ namespace ConsignmentShop
 
         private void addToCart_Click(object sender, EventArgs e)
         {
+            Item selectedItem = (Item)itemsListbox.SelectedItem;
 
+            MessageBox.Show(selectedItem.Title);
+
+            shoppingCartData.Add(selectedItem);
+
+            cartBinding.ResetBindings(false);
         }
     }
 }
